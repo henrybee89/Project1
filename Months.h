@@ -3,9 +3,11 @@
 
 class Months
 {
+	private:
+		std::string _month;
 	public:
-		std::string month;
-		int daysInMonth;
+		Months();
+		Months(std::string month);
+		std::string daysInMonth();
 
-//trevis42@gmail.com
 };

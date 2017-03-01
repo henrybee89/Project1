@@ -8,9 +8,10 @@ using namespace std;
 int main()
 {
 	Days Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
-	Months January, February, March, April, May, June, July, August, September, October, November, December;
-
-	January.daysInMonth = 31;
+	
+	
+	
+	Months January;
 
 	Monday.day = "Monday";
 	Tuesday.day = "Tuesday";
@@ -20,8 +21,9 @@ int main()
 	Saturday.day = "Saturday";
 	Sunday.day = "Sunday";
 
-	cout << Monday.day << Tuesday.day << Wednesday.day << Thursday.day << Friday.day << Saturday.day << Sunday.day;
-
+	January.month = "       January";
+	
+	cout << January.daysInMonth() << endl;
 
 	return 0;
 }
