@@ -5,7 +5,7 @@ using namespace std;
 
 string Months::daysInMonth()
 {
-string whatMonth = _month + "\n";
+string whatMonth =  _month + "\n";
 whatMonth += " S  M  T  W  T  F  S\n";
 whatMonth += "____________________\n";
 
