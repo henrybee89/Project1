@@ -9,5 +9,6 @@ class Months
 		Months();
 		Months(std::string month);
 		std::string daysInMonth();
+		int daysInCalander();
 
 };
