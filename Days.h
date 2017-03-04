@@ -4,6 +4,10 @@
 
 class Days
 {
+	private:
+		std::string _notes;
 	public:
-		std::string day;
+		Days();
+		~Days();
+		Days(std::string notes);
 };

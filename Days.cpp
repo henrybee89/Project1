@@ -2,9 +2,19 @@
 #include <string>
 using namespace std;
 
-
-void Days::printWeek (string x)
+Days::Days()
 {
-	cout << x << endl;
+	_notes = "BLANK";
 }
+
+Days::Days(string notes) : _notes(notes)
+{
+}
+
+Days::~Days()
+{
+}
+
+
+
 
