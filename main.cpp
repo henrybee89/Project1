@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <fstream>
+#include "Days.h"
 #include <iomanip>
 #include <string>
 #include "Months.h"
@@ -7,6 +8,7 @@ using namespace std;
 
 
 void printCalander(int);
+void whatDay(int);
 
 int main()
 {
@@ -17,6 +19,10 @@ int main()
 	
 	printCalander(choice);
 
+	cout << endl;
+	cout << "What day do you want to view?" << endl;
+	cin >> choice;
+	whatDay(choice);	
 	cout << endl;
 	return 0;
 }
@@ -89,4 +95,17 @@ void printCalander(int x)
 		cout << "GOODD";
 }
 
+void whatDay(int x)
+{
+	Days Monday ("Mondays Notes");
+	if (x == 1)
+	{
+		Monday.printNotes();
+	}
+	else 
+	{
+		Monday.readNotes();
+	}
+		
+}
 

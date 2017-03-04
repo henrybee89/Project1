@@ -10,4 +10,6 @@ class Days
 		Days();
 		~Days();
 		Days(std::string notes);
+		void printNotes();
+		void readNotes();
 };
